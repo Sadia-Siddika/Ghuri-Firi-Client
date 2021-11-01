@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Component/Header/Header';
+import Heade from './Component/Header/Heade';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
 import Register from './Component/Register/Register';
@@ -19,7 +19,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Header></Header>
+        <Heade></Heade>
         <Switch>
           <Route exact path="/">
             <Home></Home>

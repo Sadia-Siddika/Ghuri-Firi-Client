@@ -9,7 +9,7 @@ const Home = () => {
     const [blogs, setBlog] = useState([]);
 
     useEffect(() => {
-        const url = 'https://spooky-pirate-30719.herokuapp.com/event';
+        const url = 'https://creepy-village-08269.herokuapp.com/event';
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <h1 className="text-center p-3">TOURISM BLOG</h1>
+                <h1 className="text-center p-3">GHURI FIRI BLOG</h1>
                 <div className="row row-cols-1 row-cols-lg-3 g-4">
                     {
                         blogs.map(blog => <div className="col" key={blog._id}>
@@ -51,7 +51,7 @@ const Home = () => {
                 </div>
 
                 {/* Card */}
-                <h1 className="text-center p-3">TOURISM EVENT</h1>
+                <h1 className="text-center p-3">GHURI FIRI EVENT</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {/* {
                         doctors.slice(0, 6).map(doctor => <HomeCard

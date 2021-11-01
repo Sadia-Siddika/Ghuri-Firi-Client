@@ -7,7 +7,7 @@ const ManageTask = () => {
     const [items, setItem] = useState([]);
 
     useEffect(() => {
-        const url = 'https://spooky-pirate-30719.herokuapp.com/join';
+        const url = 'https://creepy-village-08269.herokuapp.com/join';
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -17,7 +17,7 @@ const ManageTask = () => {
     const handleDeleteJoin = id => {
         const proceed = window.confirm('Are you sure, you want to delete ?');
         if (proceed) {
-            const url = `https://spooky-pirate-30719.herokuapp.com/join/${id}`;
+            const url = `https://creepy-village-08269.herokuapp.com/join/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

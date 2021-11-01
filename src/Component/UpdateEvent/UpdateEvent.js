@@ -6,7 +6,7 @@ const UpdateEvent = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `https://spooky-pirate-30719.herokuapp.com/event/${id}`;
+        const url = `https://creepy-village-08269.herokuapp.com/event/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -38,7 +38,7 @@ const UpdateEvent = () => {
     }
 
     const handleUpdateBlog = e => {
-        const url = `https://spooky-pirate-30719.herokuapp.com/event/${id}`;
+        const url = `https://creepy-village-08269.herokuapp.com/event/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

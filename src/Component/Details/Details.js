@@ -9,7 +9,7 @@ const Details = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `https://spooky-pirate-30719.herokuapp.com/event/${id}`;
+        const url = `https://creepy-village-08269.herokuapp.com/event/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -23,7 +23,7 @@ const Details = () => {
         const title = blog.title;
 
         const newBlog = { userName, userEmail, img, location, title };
-        fetch('https://spooky-pirate-30719.herokuapp.com/join', {
+        fetch('https://creepy-village-08269.herokuapp.com/join', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

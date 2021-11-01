@@ -5,7 +5,7 @@ const Blog = () => {
     const [blogs, setBlog] = useState([]);
 
     useEffect(() => {
-        const url = 'https://spooky-pirate-30719.herokuapp.com/event';
+        const url = 'https://creepy-village-08269.herokuapp.com/event';
 
         fetch(url)
             .then(res => res.json())

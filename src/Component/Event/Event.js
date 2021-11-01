@@ -13,7 +13,7 @@ const Event = () => {
         const description = descriptionRef.current.value;
 
         const newBlog = { title, img, description, location };
-        fetch('https://spooky-pirate-30719.herokuapp.com/event', {
+        fetch('https://creepy-village-08269.herokuapp.com/event', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
-const Header = () => {
+const Heade = () => {
   const { user, logOut } = useAuth();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        <p className="navbar-brand fw-bold text-white">TOURISM</p>
+        <p className="navbar-brand fw-bold text-white">Ghuri Firi</p>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -39,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Heade;

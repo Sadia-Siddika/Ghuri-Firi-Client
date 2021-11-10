@@ -21,7 +21,7 @@ const UpdateEvent = () => {
     const locationChange = e => {
         const updateLocation = e.target.value;
         const updateBlog = { ...blog };
-        updateBlog.name = updateLocation;
+        updateBlog.location = updateLocation;
         setBlog(updateBlog);
     }
     const imgChange = e => {
@@ -33,7 +33,7 @@ const UpdateEvent = () => {
     const descriptionChange = e => {
         const updateDescription = e.target.value;
         const updateBlog = { ...blog };
-        updateBlog.address = updateDescription;
+        updateBlog.description = updateDescription;
         setBlog(updateBlog);
     }
 
@@ -49,6 +49,7 @@ const UpdateEvent = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount > 0) {
+                    console.log('update')
                     alert('Update Successful');
                     setBlog({});
                     e.target.reset();
@@ -59,7 +60,7 @@ const UpdateEvent = () => {
 
     return (
         <div className="container my-5 shadow p-3">
-            <h1 className="text-center fw-bold mb-5">ADD BLOG</h1>
+            <h1 className="text-center fw-bold mb-5">UPDATE BLOG</h1>
             <div className="d-flex justify-content-center align-items-center">
                 <form onSubmit={handleUpdateBlog} className="container w-50">
                     <div className="row my-2">

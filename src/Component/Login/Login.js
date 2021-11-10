@@ -68,9 +68,9 @@ const Login = () => {
             </div>
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-dark fw-bold">Sign In</button>
+            <button type="submit" className="btn btn-secondary fw-bold">Sign In</button>
             <hr />
-            <button onClick={handleLogInWithGoogle} type="submit" className="btn btn-dark fw-bold">Sign In with Google</button>
+            <button onClick={handleLogInWithGoogle} type="submit" className="btn btn-secondary fw-bold">Sign In with Google</button>
             <p className="fw-bold">Already Register? Please <Link to="/register">Sign Up</Link></p>
           </div>
         </form>

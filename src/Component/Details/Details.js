@@ -51,7 +51,7 @@ const Details = () => {
 
                                 <h5 className="card-title"><span className="fw-bold">Location:</span> {blog.location}</h5>
                                 <p className="card-text"><span className="fw-bold">Description:</span> {blog.description}</p>
-                                <button onClick={joinBlog} className="btn btn-dark text-white fw-bold">JOIN</button>
+                                <button onClick={joinBlog} className="btn btn-success text-white fw-bold">JOIN</button>
                             </div>
                         </div>
                         <div className="col-md-4">

@@ -1,6 +1,6 @@
 # Project Name: Ghuri Firi
 
-# Live Link: https://cocky-feynman-9bf7d9.netlify.app/
+# Live Link: https://ghuri-firi.web.app
 
 ### `Features`
 1. Show About Home

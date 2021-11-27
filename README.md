@@ -3,8 +3,6 @@
 # Live Link: https://ghuri-firi.web.app
 
 ### `Features`
-1. Show About Home
-2. Show Blogs
-3. Show Manage
-4. Login Methods with one systems
-5. Can not work without Login
+1. Ghuri Firi is a tour website maintaining by the both server and client site.
+2. Users can see the event also, and they can book it after the user login.
+3. Admin section, Admin can update new event, and pictures through the database.
